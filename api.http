@@ -19,5 +19,3 @@ Content-Type: application/json
     "text": "new tweet"
 }
 
-###
-DELETE  http://localhost:3000/tweets/3

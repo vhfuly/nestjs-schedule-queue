@@ -26,8 +26,4 @@ export class TweetsService {
   update(id: number, updateTweetDto: UpdateTweetDto) {
     return this.tweetModel.update(updateTweetDto, { where: { id: id } });
   }
-
-  remove(id: number) {
-    return this.tweetModel.destroy({ where: { id: id } });
-  }
 }

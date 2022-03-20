@@ -5,11 +5,10 @@ import { join } from 'path';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TweetsModule } from './tweets/tweets.module';
-import { TweetsCountService } from './tweets-count/tweets-count.service';
 
 @Module({
   controllers: [AppController],
-  providers: [AppService, TweetsCountService],
+  providers: [AppService],
   imports: [
     ScheduleModule.forRoot(),
     SequelizeModule.forRoot({
