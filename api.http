@@ -1,0 +1,23 @@
+GET http://localhost:3000/tweets
+
+###
+GET http://localhost:3000/tweets/1
+
+###
+Patch http://localhost:3000/tweets/3
+Content-Type: application/json
+ 
+{
+    "text": "delete"
+}
+
+###
+POST http://localhost:3000/tweets
+Content-Type: application/json
+ 
+{
+    "text": "new tweet"
+}
+
+###
+DELETE  http://localhost:3000/tweets/3
